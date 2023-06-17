@@ -1,0 +1,15 @@
+.title{
+    width: 300px;
+    display: inline-block;
+    background-color: gray;
+    border: 1px solid red;
+    padding: 10px;
+    margin-left: 100px;
+
+   transition: all 0.3s linear;
+  
+}
+
+.title:hover{
+    transform: scale3d(2) ;
+}
