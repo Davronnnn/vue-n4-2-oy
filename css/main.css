@@ -1,15 +1,139 @@
-.title{
-    width: 300px;
-    display: inline-block;
-    background-color: gray;
-    border: 1px solid red;
-    padding: 10px;
-    margin-left: 100px;
-
-   transition: all 0.3s linear;
-  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.title:hover{
-    transform: scale3d(2) ;
+.container {
+    width: 1280px;
+    margin: 0 auto;
 }
+
+/* home page */
+
+/* hero */
+
+.hero {
+    height: 600px;
+    padding: 116px 85px;
+
+    color: #fff;
+    background: url("../images/home-hero.png") center;
+    background-size: contain;
+}
+
+.hero__content {
+    width: 492px;
+}
+
+.hero__title {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    /* or 100% */
+
+    color: #fefcf7;
+}
+.hero__text {
+    margin-top: 32px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    color: #fefcf7;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.hero__btn {
+    margin-top: 56px;
+    padding: 15px 31px;
+
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+
+    text-align: center;
+
+    color: #fefcf7;
+
+    background: #66d2cf;
+    border-radius: 6px;
+    border: none;
+}
+
+
+/* about */
+
+.hero--about{
+    height: 450px;
+    background: url("../images/about-hero.jpeg") center;
+}
+
+.hero__title--about{
+
+font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+
+
+color: #FEFCF7;
+}
+
+
+/* about */
+
+.hero--subscribe{
+    height: 450px;
+    background: url("../images/subscribe-hero.png") center;
+}
+
+.hero__title--subscribe{
+
+font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+
+
+color: #FEFCF7;
+}
+
+
+.cards {
+    display: flex;
+    gap: 50px;
+}
+
+.card {
+    width: 350px;
+    background: #0e8784;
+    border-radius: 8px;
+
+    padding: 72px 48px 48px;
+    text-align: center;
+    color: #fff;
+}
+
+.card--secondary {
+    background-color: #0e878480;
+}
+.card-text {
+    width: 255px;
+}
+.card__title--active {
+    color: red;
+}
+
