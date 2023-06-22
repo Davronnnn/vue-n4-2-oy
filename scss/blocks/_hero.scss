@@ -1,18 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 1280px;
-    margin: 0 auto;
-}
-
-/* home page */
-
-/* hero */
-
 .hero {
     height: 600px;
     padding: 116px 85px;
@@ -20,13 +5,13 @@
     color: #fff;
     background: url("../images/home-hero.png") center;
     background-size: contain;
-}
 
-.hero__content {
+
+&__content {
     width: 492px;
 }
 
-.hero__title {
+&__title {
     font-family: "Fraunces 9pt";
     font-style: normal;
     font-weight: 900;
@@ -36,7 +21,7 @@
 
     color: #fefcf7;
 }
-.hero__text {
+&__text {
     margin-top: 32px;
     font-family: "Barlow";
     font-style: normal;
@@ -51,7 +36,7 @@
     opacity: 0.8;
 }
 
-.hero__btn {
+&__btn {
     margin-top: 56px;
     padding: 15px 31px;
 
@@ -71,69 +56,39 @@
     border: none;
 }
 
-
 /* about */
 
-.hero--about{
+&--about {
     height: 450px;
     background: url("../images/about-hero.jpeg") center;
 }
 
-.hero__title--about{
+&__title--about {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
 
-font-family: 'Fraunces 9pt';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 48px;
-
-
-color: #FEFCF7;
+    color: #fefcf7;
 }
-
 
 /* about */
 
-.hero--subscribe{
+&--subscribe {
     height: 450px;
     background: url("../images/subscribe-hero.png") center;
 }
 
-.hero__title--subscribe{
+&__title--subscribe {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
 
-font-family: 'Fraunces 9pt';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 48px;
-
-
-color: #FEFCF7;
+    color: #fefcf7;
 }
 
-
-.cards {
-    display: flex;
-    gap: 50px;
+    
 }
-
-.card {
-    width: 350px;
-    background: #0e8784;
-    border-radius: 8px;
-
-    padding: 72px 48px 48px;
-    text-align: center;
-    color: #fff;
-}
-
-.card--secondary {
-    background-color: #0e878480;
-}
-.card-text {
-    width: 255px;
-}
-.card__title--active {
-    color: red;
-}
-

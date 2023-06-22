@@ -3,19 +3,26 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/main.min.css">
         <title>Document</title>
     </head>
     <body>
         <div class="container">
-            <header>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                        <a href="./about.html">About</a>
-                        <a href="#">Subscribe</a>
-                    </li>
-                </ul>
+           <header class="header">
+                <img class="header__logo" src="./images/logo.png" alt="coffe roasters" width="236" />
+                <nav class=" header__nav nav ">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="./about.html">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="./subscribe.html">Subscribe</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
             <main>
                 <section class="hero hero--subscribe">
@@ -26,23 +33,7 @@
                 </section>
             </main>
 
-            <!-- <div class="cards">
-                <div class="card">
-                    <img class="card__img" src="./images/Shape.png" alt="" />
-                    <h4 class="card__title">Best quality</h4>
-                    <p class="card__text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
-                </div>
-                <div class="card card--secondary">
-                    <img class="card__img" src="./images/Shape.png" alt="" />
-                    <h4 class="card__title">Exclusive benefits</h4>
-                    <p class="card__text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="./images/Shape.png" alt="" />
-                    <h4 class="card__title card__title--active">Best quality</h4>
-                    <p class="card__text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
-                </div>
-            </div> -->
+    
         </div>
     </body>
 </html>

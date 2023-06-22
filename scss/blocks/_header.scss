@@ -1,0 +1,23 @@
+.header {
+    margin: 43px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__link {
+        color: #83888f;
+        font-size: 12px;
+        font-family: Barlow;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.923px;
+        text-transform: uppercase;
+    }
+
+}

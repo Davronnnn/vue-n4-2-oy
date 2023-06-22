@@ -1,0 +1,21 @@
+
+.card {
+    width: 350px;
+    background: #0e8784;
+    border-radius: 8px;
+
+    padding: 72px 48px 48px;
+    text-align: center;
+    color: #fff;
+
+    &--secondary {
+        background-color: #0e878480;
+    }
+    &-text {
+        width: 255px;
+    }
+    &__title--active {
+        color: red;
+    }
+    
+}
