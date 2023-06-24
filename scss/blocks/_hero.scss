@@ -1,3 +1,11 @@
+%main-font {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+}
+
 .hero {
     height: 600px;
     padding: 116px 85px;
@@ -6,89 +14,87 @@
     background: url("../images/home-hero.png") center;
     background-size: contain;
 
+    &__content {
+        width: 492px;
+    }
 
-&__content {
-    width: 492px;
-}
+    &__title {
+        // font-family: "Fraunces 9pt";
+        // font-style: normal;
+        // font-weight: 900;
+        // font-size: 72px;
+        // line-height: 72px;
+        @extend %main-font;
+        /* or 100% */
 
-&__title {
-    font-family: "Fraunces 9pt";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 72px;
-    /* or 100% */
+        color: #fefcf7;
+    }
+    &__text {
+        margin-top: 32px;
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
 
-    color: #fefcf7;
-}
-&__text {
-    margin-top: 32px;
-    font-family: "Barlow";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
+        color: #fefcf7;
 
-    color: #fefcf7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
 
-    mix-blend-mode: normal;
-    opacity: 0.8;
-}
+    &__btn {
+        margin-top: 56px;
+        padding: 15px 31px;
 
-&__btn {
-    margin-top: 56px;
-    padding: 15px 31px;
+        font-family: "Fraunces 9pt";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height, or 139% */
 
-    font-family: "Fraunces 9pt";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height, or 139% */
+        text-align: center;
 
-    text-align: center;
+        color: #fefcf7;
 
-    color: #fefcf7;
+        background: #66d2cf;
+        border-radius: 6px;
+        border: none;
+    }
 
-    background: #66d2cf;
-    border-radius: 6px;
-    border: none;
-}
+    /* about */
 
-/* about */
+    &--about {
+        height: 450px;
+        background: url("../images/about-hero.jpeg") center;
+    }
 
-&--about {
-    height: 450px;
-    background: url("../images/about-hero.jpeg") center;
-}
+    &__title--about {
+        font-family: "Fraunces 9pt";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
 
-&__title--about {
-    font-family: "Fraunces 9pt";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 48px;
+        color: #fefcf7;
+    }
 
-    color: #fefcf7;
-}
+    /* about */
 
-/* about */
+    &--subscribe {
+        height: 450px;
+        background: url("../images/subscribe-hero.png") center;
+    }
 
-&--subscribe {
-    height: 450px;
-    background: url("../images/subscribe-hero.png") center;
-}
+    &__title--subscribe {
+        font-family: "Fraunces 9pt";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
 
-&__title--subscribe {
-    font-family: "Fraunces 9pt";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 48px;
-
-    color: #fefcf7;
-}
-
-    
+        color: #fefcf7;
+    }
 }

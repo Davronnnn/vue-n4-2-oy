@@ -1,12 +1,36 @@
+
+
+
 @import "./global";
 @import "./blocks/header";
 @import "./blocks/hero";
 @import "./blocks/card";
+@import "./variables.scss";
 
 
-$main-color:#83888f;
+.cards{
+    margin: 30px;
+    @extend %shablon;
+    gap: 10px;
+}
 
+.card2{
+    @include card-mixin(blue, 10px);
+    background-color: #83888f;
+}
 
+.card2:nth-child(2){
+    @include card-mixin(red,20px);
+}
 
+.card2:nth-child(3){
+    @include card-mixin(black,0);
+}
 
+.card2:nth-child(4){
+    @include card-mixin(yellow,40px);
+}
 
+table{
+    border-collapse: collapse;
+}
