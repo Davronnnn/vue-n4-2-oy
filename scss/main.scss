@@ -8,6 +8,15 @@
 @import "./variables.scss";
 
 
+.facebook-icon path{
+    transition: all 0.1s linear;
+}
+
+
+.facebook-icon:hover path{
+    fill: red;
+}
+
 .cards{
     margin: 30px;
     @extend %shablon;
@@ -33,4 +42,15 @@
 
 table{
     border-collapse: collapse;
+}
+::-webkit-scrollbar {
+	width: 0.8vw;
+	height: 0.8vw;
+}
+::-webkit-scrollbar-track {
+	background: #1c1c1c;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 30px;
 }
