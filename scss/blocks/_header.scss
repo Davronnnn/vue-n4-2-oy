@@ -1,5 +1,5 @@
 .header {
-    margin: 43px 0;
+    padding: 43px 0;
 
     display: flex;
     justify-content: space-between;
@@ -20,4 +20,25 @@
         text-transform: uppercase;
     }
 
+
+    &__toggle{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header{
+
+        &__logo{
+            width: 163px;
+            height: 18px;
+        }
+        &__list{
+            display: none;
+        }
+
+        &__toggle{
+            display: block;
+        }
+    }
 }

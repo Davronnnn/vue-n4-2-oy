@@ -2,11 +2,57 @@
 @import "./blocks/header";
 @import "./blocks/hero";
 @import "./blocks/card";
+@import "./variables.scss";
+@import "./blocks/collection";
+@import "./blocks/numbers";
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 
-$main-color:#83888f;
 
 
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 0 40px;
+    }
+}
 
 
+@media only screen and (max-width: 550px) {
+    .container {
+        padding: 0 24px;
+    }
+}
 
+
+.block {
+    width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+    background-color: red;
+}
+@media only screen and (max-width: 1100px) {
+    .block {
+        background-color: blue;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .block {
+        background-color: gray;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .block {
+        background-color: black;
+    }
+}
+
+// @media (max-width: 800px)  {
+//     .block{
+//         background-color: blue;
+//     }
+// }

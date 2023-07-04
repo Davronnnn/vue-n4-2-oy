@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Philosopher:wght@700&display=swap" rel="stylesheet" />
+
         <link rel="stylesheet" href="./css/main.min.css" />
         <title>Document</title>
     </head>
@@ -11,7 +16,7 @@
         <div class="container">
             <header class="header">
                 <img class="header__logo" src="./images/logo.png" alt="coffe roasters" width="236" />
-                <nav class=" header__nav nav ">
+                <nav class="header__nav nav">
                     <ul class="header__list">
                         <li class="header__item">
                             <a class="header__link" href="">Home</a>
@@ -23,9 +28,73 @@
                             <a class="header__link" href="./subscribe.html">Subscribe</a>
                         </li>
                     </ul>
+                    <div class="header__toggle">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Combined Shape 2">
+                                <path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M0 1.5C0 0.671573 0.671573 0 1.5 0H14.5C15.3284 0 16 0.671573 16 1.5C16 2.32843 15.3284 3 14.5 3H1.5C0.671573 3 0 2.32843 0 1.5ZM0 7.5C0 6.67157 0.671573 6 1.5 6H14.5C15.3284 6 16 6.67157 16 7.5C16 8.32843 15.3284 9 14.5 9H1.5C0.671573 9 0 8.32843 0 7.5ZM1.5 12C0.671573 12 0 12.6716 0 13.5C0 14.3284 0.671573 15 1.5 15H14.5C15.3284 15 16 14.3284 16 13.5C16 12.6716 15.3284 12 14.5 12H1.5Z" fill="#333D4B" />
+                            </g>
+                        </svg>
+                    </div>
                 </nav>
             </header>
+
             <main>
+                <section class="collection">
+                    <div class="collection__card">
+                        <img class="collection__img" src="./images/expresso.png" alt="expresso" />
+                        <div class="collection__content">
+                            <h4 class="collection__title">Gran Espresso</h4>
+                            <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                        </div>
+                    </div>
+                    <div class="collection__card">
+                        <img class="collection__img" src="./images/expresso.png" alt="expresso" />
+                        <div class="collection__content">
+                            <h4 class="collection__title">Gran Espresso</h4>
+                            <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                        </div>
+                    </div>
+                    <div class="collection__card">
+                        <img class="collection__img" src="./images/expresso.png" alt="expresso" />
+                        <div class="collection__content">
+                            <h4 class="collection__title">Gran Espresso</h4>
+                            <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                        </div>
+                    </div>
+                    <div class="collection__card">
+                        <img class="collection__img" src="./images/expresso.png" alt="expresso" />
+                        <div class="collection__content">
+                            <h4 class="collection__title">Gran Espresso</h4>
+                            <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="numbers">
+                    <div class="numbers__cards">
+                        <div class="numbers__card">
+                            <p class="numbers__number">01</p>
+                            <h4 class="numbers__title">Pick your coffee</h4>
+                            <p class="numbers__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+                        </div>
+
+                        <div class="numbers__card">
+                            <p class="numbers__number">01</p>
+                            <h4 class="numbers__title">Pick your coffee</h4>
+                            <p class="numbers__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+                        </div>
+
+                        <div class="numbers__card">
+                            <p class="numbers__number">01</p>
+                            <h4 class="numbers__title">Pick your coffee</h4>
+                            <p class="numbers__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+                        </div>
+                    </div>
+                    <button class="numbers__btn">Create your plan</button>
+                </section>
+            </main>
+
+            <!-- <main>
                 <section class="hero">
                     <div class="hero__content">
                         <h1 class="hero__title">Great coffee made simple.</h1>
@@ -33,7 +102,7 @@
                         <button class="hero__btn">Create your plan</button>
                     </div>
                 </section>
-            </main>
+            </main> -->
 
             <!-- <div class="cards">
                 <div class="card">

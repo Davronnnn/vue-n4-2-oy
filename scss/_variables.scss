@@ -1,0 +1,17 @@
+
+$main-color:#83888f;
+
+$main-font: "Roboto";
+$text-size:32px;
+
+%shablon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin card-mixin($color, $jumavoy){ 
+   color: $color;
+   padding: $jumavoy;
+}
