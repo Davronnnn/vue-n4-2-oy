@@ -1,0 +1,62 @@
+.collection {
+    margin-top: 120px;
+
+    display: flex;
+    gap: 30px;
+
+    text-align: center;
+
+    &__title {
+        margin-top: 70px;
+        color: #333d4b;
+        font-size: 24px;
+        font-family: "Fraunces", serif;
+        font-family: "Philosopher", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    &__text {
+        margin-top: 24px;
+
+        color: #333d4b;
+
+        font-size: 16px;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .collection {
+        flex-direction: column;
+
+        text-align: left;
+
+        &__card {
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+            text-align: left;
+        }
+
+        &__title {
+            margin-top: 0px;
+        }
+        &__content {
+            max-width: 280px;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .collection {
+        &__card {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
