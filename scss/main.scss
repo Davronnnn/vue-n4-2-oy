@@ -7,6 +7,7 @@
 @import "./blocks/numbers";
 @import "./blocks/commitment";
 
+@import "./my-team/_director";
 @import "./my-team/build";
 
 .container {
@@ -154,20 +155,52 @@
     }
 }
 
-@media only screen and (max-width:550px){
-    .build{
+@media only screen and (max-width: 550px) {
+    .build {
         padding: 100px 24px;
 
         &__title {
-           max-width: 200px;
+            max-width: 200px;
         }
 
         &__item {
-           flex-direction: column;
-           align-items: center;
-           text-align: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
-           margin-bottom: 48px;
+            margin-bottom: 48px;
         }
+    }
+}
+
+body {
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    position: absolute;
+
+    animation: test 3s infinite linear;
+}
+
+@keyframes test {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        transform: scale(2);
     }
 }
