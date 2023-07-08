@@ -5,14 +5,15 @@
 @import "./variables.scss";
 @import "./blocks/collection";
 @import "./blocks/numbers";
+@import "./blocks/commitment";
+
+@import "./my-team/_director";
+@import "./my-team/build";
 
 .container {
     max-width: 1280px;
     margin: 0 auto;
 }
-
-
-
 
 @media only screen and (max-width: 900px) {
     .container {
@@ -20,13 +21,11 @@
     }
 }
 
-
 @media only screen and (max-width: 550px) {
     .container {
         padding: 0 24px;
     }
 }
-
 
 .block {
     width: 1200px;
@@ -56,3 +55,152 @@
 //         background-color: blue;
 //     }
 // }
+
+.build {
+    padding: 140px 165px;
+    background: #012f34;
+
+    position: relative;
+
+    &::after {
+        content: url("../images/build-image.png");
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 445px;
+        position: relative;
+
+        color: #fff;
+        font-family: Livvic;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: -54px;
+            left: 0;
+
+            width: 50px;
+            height: 4px;
+
+            background: #f67e7e;
+        }
+    }
+
+    &__list {
+        max-width: 500px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: start;
+        gap: 23px;
+
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        margin-bottom: 16px;
+
+        color: #f67e7e;
+        font-family: Livvic;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    &__text {
+        color: #fff;
+        font-family: Livvic;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .build {
+        &::after {
+            top: 0;
+        }
+
+        &__title {
+            color: #fff;
+            font-family: Livvic;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        padding: 136px 40px;
+        &__content {
+            flex-direction: column;
+            gap: 64px;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .build {
+        padding: 100px 24px;
+
+        &__title {
+            max-width: 200px;
+        }
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            margin-bottom: 48px;
+        }
+    }
+}
+
+body {
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    position: absolute;
+
+    animation: test 3s infinite linear;
+}
+
+@keyframes test {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}

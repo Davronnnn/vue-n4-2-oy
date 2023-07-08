@@ -13,6 +13,7 @@
     color: #fff;
     background: url("../images/home-hero.png") center;
     background-size: contain;
+    background-repeat: no-repeat;
 
     &__content {
         width: 492px;
@@ -59,7 +60,7 @@
 
         color: #fefcf7;
 
-        background: #66d2cf;
+        background: #0E8784;
         border-radius: 6px;
         border: none;
     }
@@ -96,5 +97,57 @@
         line-height: 48px;
 
         color: #fefcf7;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hero{
+        max-height: 854px;
+
+        background-size: cover;
+
+        &__content{
+            max-width: 400px;
+            width: auto;
+        }
+        &__title {
+
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__text{
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero{
+        max-height: 854px;
+
+        padding: 100px 24px;
+        background: url("../../images/hero-mb-main.png") center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__content{
+            text-align: center;
+            max-width: 400px;
+            width: auto;
+        }
+        &__title {
+
+            font-size: 40px;
+
+            line-height: 40px;
+            
+        }
+
+        &__text{
+            font-size: 15px;
+            
+            line-height: 25px;
+        }
     }
 }
